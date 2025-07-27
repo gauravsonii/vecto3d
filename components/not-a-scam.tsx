@@ -44,9 +44,3 @@ export function NotAScam() {
   );
 }
 
-git init
-git add -A
-git commit -m "first commit"
-git branch -M MAIN
-git remote add origin https://github.com/gauravsonii/vecto3d.git
-git push -u origin MAIN

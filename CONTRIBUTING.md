@@ -2,7 +2,7 @@
 
 ## Reporting Issues
 
-If you find a bug or want to request a feature, please open an issue on the [Issue Tracker](https://github.com/gauravsonii/vecto3D/issues).
+If you find a bug or want to request a feature, please open an issue on the [Issue Tracker](https://github.com/gauravsonii/vecto3d/issues).
 
 ## Pull Requests
 

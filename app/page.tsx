@@ -85,7 +85,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    fetch("https://api.github.com/repos/gauravsonii/vecto3D")
+    fetch("https://api.github.com/repos/gauravsonii/vecto3d")
       .then((response) => response.json())
       .then((data) => {
         const starCount = data.stargazers_count;
@@ -165,7 +165,7 @@ export default function Home() {
           <NotAScam />
           <ModeToggle />
           <Link
-            href="https://github.com/gauravsonii/vecto3D"
+            href="https://github.com/gauravsonii/"
             target="_blank"
             rel="noopener noreferrer">
             <Button className="flex items-center gap-1 w-fit">
