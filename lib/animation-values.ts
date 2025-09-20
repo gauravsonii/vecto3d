@@ -24,7 +24,7 @@ export const fadeUp = {
     y: 0,
     filter: "blur(0px)",
     transition: {
-      type: "spring",
+      type: "spring" as const,
       damping: 15,
       stiffness: 100,
       filter: { duration: 0.4 },
@@ -44,10 +44,10 @@ export const scaleUp = {
     scale: 1,
     filter: "blur(0px)",
     transition: {
-      type: "spring",
+      type: "spring" as const,
       damping: 20,
       stiffness: 100,
-      filter: { duration: 0.5, ease: "easeOut" },
+      filter: { duration: 0.5, ease: "easeOut" as const },
     },
   },
 };
@@ -64,7 +64,7 @@ export const slideRight = {
     x: 0,
     filter: "blur(0px)",
     transition: {
-      type: "spring",
+      type: "spring" as const,
       damping: 15,
       stiffness: 100,
       filter: { duration: 0.4 },
@@ -83,7 +83,7 @@ export const pageTransition = {
     filter: "blur(0px)",
     transition: {
       duration: 0.6,
-      ease: [0.25, 0.1, 0.25, 1], // cubic-bezier for smoother motion
+      ease: "easeOut" as const, // Changed from cubic-bezier array to valid easing string
       filter: { duration: 0.5 },
       when: "beforeChildren",
       staggerChildren: 0.1,
@@ -94,7 +94,7 @@ export const pageTransition = {
     filter: "blur(10px)",
     transition: {
       duration: 0.4,
-      ease: "easeInOut",
+      ease: "easeInOut" as const,
     },
   },
 };
@@ -112,9 +112,9 @@ export const modelContainerAnimation = {
     scale: 1,
     transition: {
       duration: 0.7,
-      ease: "easeOut",
+      ease: "easeOut" as const,
       scale: {
-        type: "spring",
+        type: "spring" as const,
         damping: 20,
         stiffness: 100,
       },
@@ -136,7 +136,7 @@ export const logoAnimation = {
     rotate: 0,
     filter: "blur(0px)",
     transition: {
-      type: "spring",
+      type: "spring" as const,
       damping: 10,
       stiffness: 100,
       filter: { duration: 0.3 },
@@ -156,7 +156,7 @@ export const buttonAnimation = {
     scale: 1,
     filter: "blur(0px)",
     transition: {
-      type: "spring",
+      type: "spring" as const,
       damping: 12,
       stiffness: 100,
       filter: { duration: 0.4 },
@@ -166,7 +166,7 @@ export const buttonAnimation = {
     scale: 1.05,
     boxShadow: "0px 10px 25px rgba(0, 0, 0, 0.1)",
     transition: {
-      type: "spring",
+      type: "spring" as const,
       damping: 10,
       stiffness: 400,
     },
@@ -186,7 +186,7 @@ export const listItem = {
     x: 0,
     filter: "blur(0px)",
     transition: {
-      type: "spring",
+      type: "spring" as const,
       damping: 15,
       stiffness: 100,
       filter: { duration: 0.3 },
@@ -208,7 +208,7 @@ export const cardAnimation = {
     filter: "blur(0px)",
     scale: 1,
     transition: {
-      type: "spring",
+      type: "spring" as const,
       damping: 20,
       stiffness: 100,
       filter: { duration: 0.5 },
@@ -229,10 +229,10 @@ export const tabContentAnimation = {
     y: 0,
     filter: "blur(0px)",
     transition: {
-      type: "spring",
+      type: "spring" as const,
       damping: 20,
       stiffness: 300,
-      filter: { duration: 0.4, ease: "easeOut" },
+      filter: { duration: 0.4, ease: "easeOut" as const },
     },
   },
   exit: {

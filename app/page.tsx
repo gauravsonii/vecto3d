@@ -102,7 +102,7 @@ export default function Home() {
         staggerChildren: 0.15,
         delayChildren: 0.05,
         duration: 0.6,
-        ease: [0.25, 0.1, 0.25, 1],
+        ease: "easeOut" as const,
       },
     },
   };
